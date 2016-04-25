@@ -47,7 +47,7 @@ app.put('/lions/:id', function(req, res) {
 app.delete('/lions/:id', function(req, res) {
   var lion = req.params.id;
   lions.splice(lion, 1);
-
+  res.json("deleted lion ID "+ lion);
 });
 
 
